@@ -1,24 +1,25 @@
+"use strict";
 /*
 Question 40: Album: Create objects for music albums.
 */
 //function for artest with titel 
 function make_album(name, Title, Track) {
-    var Album;
+    let Album;
     if (Track) //if it has track number than it will go here
      {
         Album =
             {
-                name: name,
-                Title: Title,
-                Track: Track
+                name,
+                Title,
+                Track
             };
         return Album;
     }
     else { //if it has no track it will og here
         Album =
             {
-                name: name,
-                Title: Title
+                name,
+                Title
             };
         return Album;
     }

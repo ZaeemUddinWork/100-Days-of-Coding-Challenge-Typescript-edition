@@ -1,8 +1,13 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 //Statement of Profit and Loss
 //importing inquirer
-import inquirer from "inquirer";
+const inquirer_1 = __importDefault(require("inquirer"));
 //taking campany data for Statement od Profit & loss
-let Company_data = await inquirer.prompt([
+let Company_data = await inquirer_1.default.prompt([
     {
         name: "company_name", //company name
         type: "input",
@@ -30,7 +35,7 @@ if (Company_data.cost_of_ssales_option == "Yes") {
     //Title  cost of sale
     console.log(`Add data to find Cost of sales: `);
     //taking data from user
-    cost_of_sale = await inquirer.prompt([
+    cost_of_sale = await inquirer_1.default.prompt([
         {
             name: "OpInventory", //OpInventory
             type: "number",
@@ -54,7 +59,7 @@ if (Company_data.cost_of_ssales_option == "Yes") {
 }
 else {
     console.log(`Add Cost of sales: `);
-    cost_of_sale = await inquirer.prompt([
+    cost_of_sale = await inquirer_1.default.prompt([
         {
             name: "Cost_of_sale", //cost of sale
             type: "number",
@@ -66,7 +71,7 @@ else {
 //Title for Income
 console.log(`Income:`);
 //taking income input from user
-let income = await inquirer.prompt([
+let income = await inquirer_1.default.prompt([
     {
         name: "Other_income", //other income
         type: "number",
@@ -76,7 +81,7 @@ let income = await inquirer.prompt([
 //Title for expenses
 console.log(`Expenses:`);
 //taking Expenses from user there lot expenses but here some of them
-let Expenses = await inquirer.prompt([
+let Expenses = await inquirer_1.default.prompt([
     {
         name: "wages", //wages expenses
         type: "number",

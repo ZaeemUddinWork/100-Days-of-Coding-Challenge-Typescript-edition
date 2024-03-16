@@ -6,11 +6,11 @@ Then use your list to print a message to each person, inviting them to dinner.
 */
 Object.defineProperty(exports, "__esModule", { value: true });
 //list of Guests
-var guest_list = ['John', 'Mark', 'Lisa', 'Mikasa'];
+let guest_list = ['John', 'Mark', 'Lisa', 'Mikasa'];
 //function for printing list 
 function print_list(array_name) {
-    array_name.forEach(function (t) {
-        console.log("Hello Mr/Mrs or Miss ".concat(t, ", We are inviting you to our dinner party!!"));
+    array_name.forEach(t => {
+        console.log(`Hello Mr/Mrs or Miss ${t}, We are inviting you to our dinner party!!`);
     });
 }
 //calling function

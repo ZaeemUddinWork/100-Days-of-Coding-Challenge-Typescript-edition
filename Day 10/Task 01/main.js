@@ -1,3 +1,4 @@
+"use strict";
 /*
 Question 28: Stages of Life: Determine a person’s life stage with an if-else chain.
 */
@@ -5,42 +6,42 @@ Question 28: Stages of Life: Determine a person’s life stage with an if-else c
 function ager_analyse(age) {
     if (age == 0) // condition for age = 0 
      {
-        console.log("This person is not born yet!!");
+        console.log(`This person is not born yet!!`);
     }
     else if (age > 0 && age <= 1) // condition for age greater 0 and smaller and equal 1
      {
-        console.log("This person is Baby");
+        console.log(`This person is Baby`);
     }
     else if (age > 1 && age < 3) // condition for age greater than 1 and smaller than 3
      {
-        console.log("This person is Toddler");
+        console.log(`This person is Toddler`);
     }
     else if (age > 3 && age < 5) // condition for age greater than 3 and smaller than 5
      {
-        console.log("This person is Perschooler");
+        console.log(`This person is Perschooler`);
     }
     else if (age > 5 && age < 12) // condition for age greater than 5 and smaller than 12
      {
-        console.log("This person is Primary school boy");
+        console.log(`This person is Primary school boy`);
     }
     else if (age > 12 && age < 19) // condition for age greater than 12 and smaller than 19
      {
-        console.log("This person is Teenager");
+        console.log(`This person is Teenager`);
     }
     else if (age > 19 && age < 65) // condition for age greater than 19 and smaller than 65
      {
-        console.log("This person is Adult");
+        console.log(`This person is Adult`);
     }
     else if (age > 65 && age < 150) // condition for age greater than 65 and smaller than 150
      {
-        console.log("This person is Old person");
+        console.log(`This person is Old person`);
     }
     else if (age > 150) // condition for age greater than 150
      {
-        console.log("This person is Legend");
+        console.log(`This person is Legend`);
     }
     else { // if it dosent meet all above condition so it mean this person dosenot exists
-        console.log("This person is not exists");
+        console.log(`This person is not exists`);
     }
 }
 //now printing all ages 

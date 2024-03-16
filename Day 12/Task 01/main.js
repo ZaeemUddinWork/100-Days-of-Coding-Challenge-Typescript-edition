@@ -1,10 +1,11 @@
+"use strict";
 /*
 Question 34: Pizzas: Share your favorite pizzas and express your love for them.
 */
 //saving my all favorite pizza flavours
-var Pizzas = ['Fajita', 'Pepperoni', 'Mexican'];
+let Pizzas = ['Fajita', 'Pepperoni', 'Mexican'];
 //for earch for pizza
-Pizzas.forEach(function (flavours) {
-    console.log("I really like ".concat(flavours, " pizza !!")); //it will print all name that have in array
+Pizzas.forEach(flavours => {
+    console.log(`I really like ${flavours} pizza !!`);
 });
-console.log("I really really like Pizza !!!!");
+console.log(`I really really like Pizza !!!!`);
