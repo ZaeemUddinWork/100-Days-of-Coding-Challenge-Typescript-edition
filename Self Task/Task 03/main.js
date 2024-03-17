@@ -1,17 +1,12 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
 //Bmi calculator v2.O
 //importing inquirer
-const inquirer_1 = __importDefault(require("inquirer"));
+import inquirer from "inquirer";
 //
 //Title
 console.log(`BMI Calculator v2.O`);
 //
 //this will ask question According to BMI
-let BMI_calculator = await inquirer_1.default.prompt([
+let BMI_calculator = await inquirer.prompt([
     {
         name: "Age",
         type: 'number',

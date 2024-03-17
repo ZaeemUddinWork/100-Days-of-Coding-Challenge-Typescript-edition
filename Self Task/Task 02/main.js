@@ -1,12 +1,7 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
 //importing inquirer
-const inquirer_1 = __importDefault(require("inquirer"));
+import inquirer from "inquirer";
 //BMI calculator with option user can select in Kilograms or Pounds
-let BMI_calculator = await inquirer_1.default.prompt({
+let BMI_calculator = await inquirer.prompt({
     name: 'Option',
     type: "list",
     message: "Select Measurement Units :",
@@ -16,7 +11,7 @@ let BMI_calculator = await inquirer_1.default.prompt({
 console.log(`!! BMI Claculator !!`);
 if (BMI_calculator.Option == 'Kilograms and meters') //if user select in kilogram so this program will work
  {
-    let BMI_calculator_Kilogram = await inquirer_1.default.prompt([
+    let BMI_calculator_Kilogram = await inquirer.prompt([
         {
             name: 'Age',
             type: "number",
@@ -78,7 +73,7 @@ if (BMI_calculator.Option == 'Kilograms and meters') //if user select in kilogra
 }
 else if (BMI_calculator.Option == "Pounds and inches") // if user select pounds so this program will work
  {
-    let BMI_calculator_Pounds = await inquirer_1.default.prompt([
+    let BMI_calculator_Pounds = await inquirer.prompt([
         {
             name: 'Age',
             type: "number",
