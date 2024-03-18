@@ -105,7 +105,7 @@ async function Atm_start() {
           console.log(
             chalk.red(`\n\n
         ------------------------------
-        You Can transfer Cash at your own Account.
+        You Can't transfer Cash at your own Account.
         ------------------------------
         \n\n`)
           );
