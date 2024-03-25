@@ -1,1 +1,1 @@
-"# 100-Days-of-Coding-Challenge-Typescript-edition".
+."# 100-Days-of-Coding-Challenge-Typescript-edition".
