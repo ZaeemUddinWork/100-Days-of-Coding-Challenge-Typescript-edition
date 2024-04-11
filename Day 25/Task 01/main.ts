@@ -14,7 +14,7 @@ function number_chacking()
 {
     let number:number = 27;//assigning first time
 
-    console.log(`Number before change ${number}`)//printing
+    console.log(`Number before change ${number}`);//printing
 
     number = 4;//assigning second time
 
