@@ -18,7 +18,7 @@ function number_chacking()
 
     number = 4;//assigning second time
 
-    console.log(`Number after change ${number}`)//printing
+    console.log(`Number after change ${number}`);//printing
 }
 
 number_chacking()//calling function
