@@ -13,7 +13,7 @@ Using const helps make your code safer and more predictable.*/
 //before  reassigning 
 let num1 = 5;
 let num2 = 9;
-const answer = num1 + num2 
+const answer = num1 + num2;
 console.log(answer)
 
 //after reassigning 
